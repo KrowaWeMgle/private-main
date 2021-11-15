@@ -15,7 +15,7 @@ verseChose.onchange = function() {
 function updateDisplay(verse) {
   verse = verse.replace(" ", "");
   verse.toLowerCase();
-  let url = `docs/Fetch/textExample/${verse}.txt`;
+  let url = `Fetch/textExample/${verse}.txt`;
   let request = new XMLHttpRequest();
   request.open('GET', url);
   request.responseType = 'text';
