@@ -11,11 +11,11 @@ verseChose.onchange = function() {
   updateDisplay(verse);
 }
 //XML
-/*
+
 function updateDisplay(verse) {
   verse = verse.replace(" ", "");
   verse.toLowerCase();
-  let url = `Fetch/textExample/${verse}.txt`;
+  let url = `Fetch/textExample/verse1.txt`;
   let request = new XMLHttpRequest();
   request.open('GET', url);
   request.responseType = 'text';
@@ -24,9 +24,10 @@ function updateDisplay(verse) {
   }
   request.send();
 }
-*/
+
 
 //FETCH
+/*
 function updateDisplay(verse) {
   verse = verse.replace(" ", "");
   verse.toLowerCase();
@@ -36,8 +37,8 @@ function updateDisplay(verse) {
       poemDisplay.textContent = text;
     });
   });
-
 }
+*/
 
 
 
