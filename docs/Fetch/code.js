@@ -11,7 +11,7 @@ verseChose.onchange = function() {
   updateDisplay(verse);
 }
 //XML
-
+/*
 function updateDisplay(verse) {
   verse = verse.replace(" ", "");
   verse = verse.toLowerCase();
@@ -25,24 +25,21 @@ function updateDisplay(verse) {
   }
   request.send();
 }
-
+*/
 
 //FETCH
-/*
+
 function updateDisplay(verse) {
   verse = verse.replace(" ", "");
   verse = verse.toLowerCase();
   let url = `Fetch/${verse}.txt`;
   console.log(verse);
- fetch(url).then(function(response) {
-  response.text().then(function(text) {
-    poemDisplay.textContent = text;
-  });
+  fetch(url).then(function(response) {
+    response.text().then(function(text) {
+      poemDisplay.textContent = text;
+    });
   });
 }
-
-
-*/
 
 
 
