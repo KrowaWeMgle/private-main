@@ -16,6 +16,7 @@ function updateDisplay(verse) {
   verse = verse.replace(" ", "");
   verse.toLowerCase();
   let url = `Fetch/verse1.txt`;
+  console.log(verse);
   let request = new XMLHttpRequest();
   request.open('GET', url);
   request.responseType = 'text';
