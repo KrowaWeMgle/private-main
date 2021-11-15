@@ -14,8 +14,8 @@ verseChose.onchange = function() {
 
 function updateDisplay(verse) {
   verse = verse.replace(" ", "");
-  verse.toLowerCase();
-  let url = `Fetch/verse1.txt`;
+  verse = verse.toLowerCase();
+  let url = `Fetch/${verse}.txt`;
   console.log(verse);
   let request = new XMLHttpRequest();
   request.open('GET', url);
@@ -29,16 +29,7 @@ function updateDisplay(verse) {
 
 //FETCH
 /*
-function updateDisplay(verse) {
-  verse = verse.replace(" ", "");
-  verse.toLowerCase();
-  let url = `docs/Fetch/textExample/verse1.txt`;
-  fetch(url).then(function(response) {
-    response.text().then(function(text) {
-      poemDisplay.textContent = text;
-    });
-  });
-}
+
 */
 
 
