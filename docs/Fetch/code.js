@@ -30,7 +30,7 @@ function updateDisplay(verse) {
 function updateDisplay(verse) {
   verse = verse.replace(" ", "");
   verse.toLowerCase();
-  let url = `Fetch/textExample/${verse}.txt`;
+  let url = `docs/Fetch/textExample/verse1.txt`;
   fetch(url).then(function(response) {
     response.text().then(function(text) {
       poemDisplay.textContent = text;
