@@ -34,7 +34,8 @@ function updateDisplay(verse) {
   verse = verse.toLowerCase();
   let url = `Fetch/${verse}.txt`;
   console.log(verse);
-  fetch(url).then(function(response) {
+  fetch(url)
+  .then(function(response) {
     response.text().then(function(text) {
       poemDisplay.textContent = text;
     });
